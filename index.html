@@ -7,58 +7,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="build/output.css" rel="stylesheet">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
     <!-- header -->
-    <div class="flex justify-between items-center mt-4 pb-5">
+    <div class="lg:flex justify-between items-center lg:mt-4 lg:pb-5">
+        <div class="lg:hidden p-3 flex justify-between items-center">
+            <div>
+                <p class="text-gray-600 text-xl font-bold">Freie Universität Berlin</p>
+
+            </div>
+            <div class="flex space-x-3">
+                <i class="fa-solid fa-magnifying-glass text-ourgreen text-xl"></i>
+                <i class="fa-solid fa-ellipsis text-ourgreen text-xl"></i>
+
+            </div>
+        </div>
         <!-- logo -->
-        <div class="ml-3">
+        <div class="ml-3 lg:block hidden">
+
             <img src="img/fu-logo-1x-2e301182ca3c9a45ae34adf6dca8b6ba.png" alt="">
 
+
         </div>
-        <div class="flex flex-col mr-3 space-y-3">
+        <div class=" flex-col mr-3 space-y-3 text-sm hidden lg:flex">
+            <!-- small screen header -->
+
             <!-- first list -->
             <ul class="flex space-x-7">
-                <li>Homepage</li>
-                <li>Index</li>
-                <li>Contact</li>
-                <li>Legal Notice</li>
-                <li>Data Protection Policy</li>
-                <li>Emergencies</li>
-                <li>Accessibility Statement</li>
+                <li class="hover:underline"> Homepage</li>
+                <li class="hover:underline">Index</li>
+                <li class="hover:underline">Contact</li>
+                <li class="hover:underline">Legal Notice</li>
+                <li class="hover:underline">Data Protection Policy</li>
+                <li class="hover:underline">Emergencies</li>
+                <li class="hover:underline">Accessibility Statement</li>
 
             </ul>
             <!-- second list -->
-            <ul class="flex space-x-5 justify-end">
-                <li><button class="border border-black max-w-auto px-5 py-1">EN</button></li>
-                <li><button class="border border-black max-w-auto px-5 py-1">Quicklinks</button></li>
-                <li><button class="border border-black max-w-auto px-5 py-1">Information for</button></li>
-                <li><button class="border border-black max-w-auto px-5 py-1">search with Googlee </button></li>
-            </ul>
+            <div class="flex space-x-5 justify-end">
+                <!-- <li><button class="border border-black max-w-auto px-5 py-1 flex justify-between items-center"><span>EN </span><i class="fa-solid fa-chevron-down fa-lg text-ourgreen"></i></button></li> -->
+                <div class="border border-black flex items-center max-w-auto px-5 py-1 space-x-3"> <span>EN</span>
+                    <i class="fa-solid fa-chevron-down fa-lg text-ourgreen"></i>
+                </div>
+                <div class="border border-black flex items-center max-w-auto px-5 py-1 space-x-3"> <span>Quicklinks</span>
+                    <i class="fa-solid fa-chevron-down fa-lg text-ourgreen"></i>
+                </div>
+                <div class="border border-black flex items-center max-w-auto px-5 py-1 space-x-3"> <span>Information for</span>
+                    <i class="fa-solid fa-chevron-down fa-lg text-ourgreen"></i>
+                </div>
+                <div class="border border-black flex items-center max-w-auto px-5 py-1 space-x-3"> <span>search with Googlee </span>
+                    <i class="fa-solid fa-magnifying-glass fa-lg text-ourgreen"></i>
+                </div>
+
+
+
+
+            </div>
         </div>
 
     </div>
     <div class="bg-lightgray py-3">
-        <p class="ml-5">FREIE UNIVERSITÄT BERLIN</p>
+        <p class="font-medium  pl-3 text-mygray">FREIE UNIVERSITÄT BERLIN</p>
     </div>
     <div>
-        <ul class="flex items-center px-3 bg-ourgreen space-x-5 text-white py-3 font-semibold text-lg">
-            <li>ABOUT</li>
-            <li>
+        <div class="lg:hidden bg-ourgreen flex font-semibold items-center text-lg text-white p-3 justify-between">
+            <button class="hover:cursor-pointer">MENU</button>
+            <i class="fa-sharp fa-solid fa-bars text-white font-bold text-xl"></i>
+
+
+
+        </div>
+        <ul class="bg-ourgreen lg:flex font-semibold items-center text-lg text-white hidden ">
+            <li class="hover:bg-gray-700 p-3">ABOUT</li>
+            <li class="hover:bg-gray-700 p-3">
                 EDUCATION</li>
-            <li>RESEARCH</li>
-            <li>DEPARTMENTS</li>
-            <li>INTERNATIONAL</li>
-            <li>EXCELLENCE STRATEGY</li>
+            <li class="hover:bg-gray-700 p-3">RESEARCH</li>
+
+            <li class="hover:bg-gray-700 p-3">INTERNATIONAL</li>
+            <li class="hover:bg-gray-700 p-3">EXCELLENCE STRATEGY</li>
 
 
         </ul>
     </div>
-    <div class="flex items-center mt-10 mx-10">
-        <img src="img/deutschlandstipendium.jpeg" alt="" class="h-full object-contain">
+    <div class=" items-center mt-10 mx-10 mb-10 md:relative flex flex-col
+    ">
+
+        <img src="img/slide-a-PDCA.jpeg" alt="" class="h-full object-contain">
+        <div class=" hidden md:block absolute bg-black bg-opacity-50 bottom-0 leading-5 m-3 p-3 text-sm md:text-lg w-1/2 md:w-auto">
+            <p class="hover:underline text-white">A Seal of Quality for Teaching and Education Freie Universität has been 'system accredited' since 2016. With the next round of evaluation coming up, the university looks forward to renewing its accreditation through 2030 Image Credit: TheDigitalArtist
+                / Pixabay</p>
+
+        </div>
+        <div class="md:hidden bg-gray-700">
+            <p class="hover:underline text-white">A Seal of Quality for Teaching and Education Freie Universität has been 'system accredited' since 2016. With the next round of evaluation coming up, the university looks forward to renewing its accreditation through 2030 Image Credit: TheDigitalArtist
+                / Pixabay</p>
+
+        </div>
     </div>
-    <div class="bg-lightgray mt-5 pl-16 py-6 text-white text-2xl">
+    <div class="bg-lightgray flex pl-10 py-10 space-x-10 text-base md:text-xl lg:text-2xl items-center">
+        <i class="fa-circle-chevron-right fa-solid text-4xl text-darkblue  hover:text-mygray"></i>
 
         <p class="text-darkblue  hover:text-mygray">Coronavirus Pandemic: Current Information for University Members</p>
 
@@ -71,7 +123,7 @@
         </div>
 
         <!-- grid section -->
-        <div class="grid grid-cols-3 gap-4 mx-4">
+        <div class="gap-4 grid lg:mx-10 md:gap-3 md:grid-cols-3 md:mx-1 mx-5">
             <div class="mx-auto bg-lightgray ">
                 <img src="img/noth-juliane.jpeg" alt="" class="w-full">
                 <div class="flex ">
@@ -108,8 +160,12 @@
             </div>
         </div>
         <!-- second grid -->
-        <div class="grid grid-cols-4 mt-4 gap-5 mx-5">
-            <div class="mx-auto  bg-lightgray">
+        <div class="grid space-y-4  md:grid-cols-2  md:gap-5 lg:grid-cols-4 mt-4 items-start mx-5">
+            <!-- responsive flex -->
+
+
+
+            <div class="mx-auto  bg-lightgray mt-4">
                 <img src="img/homeoffice--6949.jpeg" alt="" class="w-full">
                 <div class="flex">
                     <h3 class=" text-blue-500">Freie Universität Berlin to Continue Using the Video Conferencing Platform Webex</h3>
@@ -129,6 +185,7 @@
                 </div>
                 <p class="text-gray-500">Press release</p>
             </div>
+
             <div class="mx-auto  bg-lightgray">
                 <img src="img/fup-berliner-literaturfestival-2022.jpeg" alt="" class="w-full">
                 <div class="flex">
@@ -153,98 +210,99 @@
                 <p class="text-gray-500">Press release</p>
             </div>
         </div>
-        <div class="flex  space-x-10 py-10 px-10">
-            <p class="text-darkblue font-semibold text-xl  hover:text-mygray"><a href="">Press Release in English</a></p>
-            <p class="text-darkblue font-semibold text-xl hover:text-mygray"><a href="">Featured Stories about Freie Universität Berlin</a></p>
+        <div class="items-center justify-between md:flex px-10 py-10 space-y-5">
+            <div class="flex space-x-5">
+                <i class="fa-circle-chevron-right fa-solid text-4xl text-darkblue"></i>
+
+                <p class="text-darkblue font-semibold text-xl  hover:text-mygray"><a href="">Press Release in English</a></p>
+            </div>
+            <div class="flex space-x-5 ">
+                <i class="fa-circle-chevron-right fa-solid text-4xl text-darkblue"></i>
+                <p class="text-darkblue font-semibold text-xl hover:text-mygray"><a href="">Featured Stories about Freie Universität Berlin</a></p>
+            </div>
         </div>
     </div>
     <!-- university grid -->
-    <div class="pt-5 px-5">
-        <p class="font-semibold text-xl"> Studying at Freie Universität </p>
-    </div>
-    <div class="grid grid-cols-4 gap-4  mt-4 px-5 p-5">
-        <div class="mx-auto ">
-            <img src="img/ssc-2015-2_930.jpeg" alt="" class="w-full">
-            <h2 class="font-semibold text-xl py-3">Advisory service</h2>
-            <p class="text-sm">Information for students and applicants: +49 30 838-700 00, Email: info-service@fu-berlin.de</p>
-            <ul class="text-mygray text-sm pt-3">
-                <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg> Student Services Center (SSC)</li>
-                <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg>Admissions</li>
-                <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg>Online-Studienfachwahl-Assistenten (OSA) (German)</li>
-            </ul>
-            <p class="flex items-center pt-10 text-mygray font-bold text-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-mygray">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg>Image credits</p>
+    <div class="p-5">
+        <div class="pt-5 px-5">
+            <p class="font-semibold text-xl"> Studying at Freie Universität </p>
         </div>
-        <div class="mx-auto ">
-            <img src="img/globus.jpeg" alt="" class="w-full">
-            <h2 class="font-semibold text-xl py-3">Advisory service</h2>
-            <p class="text-sm">Information for students and applicants: +49 30 838-700 00, Email: info-service@fu-berlin.de</p>
-            <ul class="text-mygray text-sm pt-3">
-                <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 space-y-4  mt-4 px-5 p-5">
+            <div class="mx-auto ">
+                <img src="img/ssc-2015-2_930.jpeg" alt="" class="w-full">
+                <h2 class="font-semibold text-xl py-3">Advisory service</h2>
+                <p class="text-sm">Information for students and applicants: +49 30 838-700 00, Email: info-service@fu-berlin.de</p>
+                <ul class="text-mygray text-sm pt-3">
+                    <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg> Student Services Center (SSC)</li>
-                <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
+                    <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>Admissions</li>
-                <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
+                    <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>Online-Studienfachwahl-Assistenten (OSA) (German)</li>
-            </ul>
-            <p class="flex items-center pt-10 text-mygray font-bold text-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-mygray">
+                </ul>
+                <p class="flex items-center pt-10 text-mygray font-bold text-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-mygray">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>Image credits</p>
-        </div>
-        <div class="mx-auto ">
-            <img src="img/portale.jpeg" alt="" class="w-full">
-            <h2 class="font-semibold text-xl py-3">Advisory service</h2>
-            <p class="text-sm">Information for students and applicants: +49 30 838-700 00, Email: info-service@fu-berlin.de</p>
-            <ul class="text-mygray text-sm pt-3">
-                <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
+            </div>
+            <div class="mx-auto ">
+                <img src="img/globus.jpeg" alt="" class="w-full">
+                <h2 class="font-semibold text-xl py-3">Advisory service</h2>
+                <p class="text-sm">Information for students and applicants: +49 30 838-700 00, Email: info-service@fu-berlin.de</p>
+                <ul class="text-mygray text-sm pt-3">
+                    <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg> Student Services Center (SSC)</li>
-                <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
+                    <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>Admissions</li>
-                <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
+                    <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>Online-Studienfachwahl-Assistenten (OSA) (German)</li>
-            </ul>
-            <p class="flex items-center pt-10 text-mygray font-bold text-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-mygray">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg>Image credits</p>
-        </div>
-        <div class="mx-auto ">
-            <img src="img/drs.jpeg" alt="" class="w-full">
-            <h2 class="font-semibold text-xl py-3">Advisory service</h2>
-            <p class="text-sm">Information for students and applicants: +49 30 838-700 00, Email: info-service@fu-berlin.de</p>
-            <ul class="text-mygray text-sm pt-3">
-                <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
+                </ul>
+
+            </div>
+            <div class="mx-auto ">
+                <img src="img/portale.jpeg" alt="" class="w-full">
+                <h2 class="font-semibold text-xl py-3">Advisory service</h2>
+                <p class="text-sm">Information for students and applicants: +49 30 838-700 00, Email: info-service@fu-berlin.de</p>
+                <ul class="text-mygray text-sm pt-3">
+                    <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg> Student Services Center (SSC)</li>
-                <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
+                    <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>Admissions</li>
-                <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
+                    <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>Online-Studienfachwahl-Assistenten (OSA) (German)</li>
-            </ul>
-            <p class="flex items-center pt-10 text-mygray font-bold text-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-mygray">
+                </ul>
+
+            </div>
+            <div class="mx-auto ">
+                <img src="img/drs.jpeg" alt="" class="w-full">
+                <h2 class="font-semibold text-xl py-3">Advisory service</h2>
+                <p class="text-sm">Information for students and applicants: +49 30 838-700 00, Email: info-service@fu-berlin.de</p>
+                <ul class="text-mygray text-sm pt-3">
+                    <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg>Image credits</p>
+                  </svg> Student Services Center (SSC)</li>
+                    <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>Admissions</li>
+                    <li class="hover:underline flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-darkblue">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>Online-Studienfachwahl-Assistenten (OSA) (German)</li>
+                </ul>
+
+            </div>
         </div>
     </div>
-    <div class="bg-lightgray grid grid-cols-3 gap-5 p-5">
+
+    <div class="bg-lightgray grid  md:gap-5   md:grid-cols-3 space-y-5  p-10">
         <div class="mx-auto ">
             <img src="img/foto-dhc.jpeg" alt="" class="w-full">
             <h2 class="font-semibold text-xl py-3">Advisory service</h2>
@@ -280,10 +338,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>Online-Studienfachwahl-Assistenten (OSA) (German)</li>
             </ul>
-            <p class="flex items-center pt-10 text-mygray font-bold text-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-mygray">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg>Image credits</p>
+
         </div>
         <div class="mx-auto ">
             <img src="img/bologna.jpeg" alt="" class="w-full">
@@ -300,39 +355,49 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>Online-Studienfachwahl-Assistenten (OSA) (German)</li>
             </ul>
-            <p class="flex items-center pt-10 text-mygray font-bold text-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-mygray">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg>Image credits</p>
+
         </div>
 
     </div>
-    <div class="grid grid-cols-2 p-10 gap-5 space-y-5 ">
-        <div class="mx-auto">
+    <div class="grid items-start lg:grid-cols-2 p-10 gap-5 space-y-5 ">
+        <div class="mx-auto space-y-3">
             <h1 class="font-bold text-2xl text-ourgreen">AT A GLANCE</h1>
             <p>Freie Universität Berlin has been one of the German universities of excellence since 2007. The university is leading in research and teaching and has many regional and international partners.</p>
-            <ul class="flex">
+            <ul class="space-y-1">
                 <li>
-                    Facts and Figures</li>
-                <li>Cooperation</li>
-                <li>Founding History</li>
+                    <div> <i class="fa-solid fa-chevron-right text-darkblue"></i><span> Facts and Figures </span></div>
+                </li>
+                <li>
+                    <div> <i class="fa-solid fa-chevron-right text-darkblue"></i><span> Cooperation </span></div>
+                </li>
+                <li>
+                    <div> <i class="fa-solid fa-chevron-right text-darkblue"></i><span> Founding History </span></div>
+                </li>
+
+
             </ul>
         </div>
-        <div>
+        <div class="space-y-3">
             <h1 class="font-bold text-2xl text-ourgreen">PROFESSION AND CAREER</h1>
 
-            <ul class="flex">
+            <ul class="space-y-1">
                 <li>
-                    Job Offers
-
+                    <div> <i class="fa-solid fa-chevron-right text-darkblue"></i><span> Job Offers</span></div>
                 </li>
-                <li>Continuing Education</li>
-                <li>Staff Development</li>
+                <li>
+                    <div> <i class="fa-solid fa-chevron-right text-darkblue"></i><span> Continuing Education</span></div>
+                </li>
+                <li>
+                    <div> <i class="fa-solid fa-chevron-right text-darkblue"></i><span> Staff Development</span></div>
+                </li>
+
+
+
             </ul>
         </div>
     </div>
 
-    <div class="grid grid-cols-4 gap-4 p-10 bg-lightgray">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 p-10 bg-lightgray">
         <div class="mx-auto ">
             <img src="img/seite-1-photo-Louvre-box.jpeg" alt="" class="w-full">
             <h2 class="font-semibold text-xl py-3">Advisory service</h2>
@@ -368,10 +433,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>Online-Studienfachwahl-Assistenten (OSA) (German)</li>
             </ul>
-            <p class="flex items-center pt-10 text-mygray font-bold text-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-mygray">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg>Image credits</p>
+
         </div>
         <div class="mx-auto ">
             <img src="img/vielfaeltig.jpeg" alt="" class="w-full">
@@ -388,10 +450,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>Online-Studienfachwahl-Assistenten (OSA) (German)</li>
             </ul>
-            <p class="flex items-center pt-10 text-mygray font-bold text-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-mygray">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg>Image credits</p>
+
         </div>
         <div class="mx-auto ">
             <img src="img/nachhaltig.jpeg" alt="" class="w-full">
@@ -408,10 +467,7 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                   </svg>Online-Studienfachwahl-Assistenten (OSA) (German)</li>
             </ul>
-            <p class="flex items-center pt-10 text-mygray font-bold text-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-mygray">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                  </svg>Image credits</p>
+
         </div>
     </div>
     <div>
@@ -422,7 +478,7 @@
             <li><img src="img/una-europa-logo-banner.png" alt=""></li>
         </ul>
     </div>
-    <footer class="bg-mygray flex px-5 space-x-20 text-white font-semibold pt-5 pb-10 text-base">
+    <footer class="bg-mygray grid lg:gap-20 px-5 lg:grid-cols-4 md:grid-cols-2 space-y-5 text-white  pt-5 pb-10 text-base">
         <div class="space-y-2">
             <h2 class="text-textgray"> Information for</h2>
             <ul class="text-white flex flex-col space-y-1">
@@ -488,27 +544,38 @@
             <h2 class="text-textgray">Social Media</h2>
             <ul class="space-y-1">
 
-                <li>Facebook</li>
-                <li>Twitter</li>
-                <li> Instagram</li>
-                <li>Youtube</li>
-                <li>Google Plus</li>
-                <li>Xing</li>
-                <li>LinkedIn</li>
+                <li> <i class="fa-brands fa-square-facebook text-white text-xl"></i><span> Facebook</span> </li>
+                <li> <i class="fa-brands fa-twitter  text-white text-xl"></i><span> Twitter</span> </li>
+                <li> <i class="fa-brands fa-instagram  text-white text-xl"></i> <span> Instagram</span></li>
+                <li> <i class="fa-brands fa-youtube text-white text-xl"></i><span> Youtube</span> </li>
+                <li> <i class="fa-brands fa-google-plus-g text-white text-xl"></i><span> Google Plus</span> </li>
+                <li><i class="fa-brands fa-xing text-white text-xl"></i> <span> Xing</span> </li>
+                <li> <i class="fa-brands fa-linkedin-in text-white text-xl "></i><span> LinkedIn</span> </li>
 
 
             </ul>
-            <p>Information about Using Social Media
+            <p class="py-5">Information about Using Social Media
             </p>
         </div>
         <div class="space-y-2">
             <h2 class="text-textgray">This Page</h2>
             <ul class="space-y-1">
+                <li>
+                    <div> <i class="fa-solid fa-chevron-right text-white"></i><span> Print</span></div>
+                </li>
+                <li>
+                    <div> <i class="fa-solid fa-chevron-right text-white"></i><span> Subscribe RSS-Feed</span></div>
+                </li>
+                <li>
+                    <div> <i class="fa-solid fa-chevron-right text-white"></i><span> Feedback</span></div>
+                </li>
+                <li>
+                    <div> <i class="fa-solid fa-chevron-right text-white"></i><span> Deutsch</span></div>
+                </li>
 
-                <li>Print</li>
-                <li>Subscribe RSS-Feed</li>
-                <li>Feedback</li>
-                <li>Deutsch</li>
+
+
+
             </ul>
         </div>
     </footer>
